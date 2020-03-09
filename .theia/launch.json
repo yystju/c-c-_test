@@ -1,0 +1,21 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  "version": "0.2.0",
+  "configurations": [
+      {
+            "name": "epoll_test",
+            "request": "launch",
+            "type": "gdb",
+            "program": "${workspaceFolder}/build/epoll_test",
+            "verbose": true,
+            "logFile": "/tmp/debug.log",
+        },
+        {
+            "name": "cpp local remote",
+            "type": "gdbtarget",
+            "program": "${workspaceFolder}/build/epoll_test",
+            "request": "launch"
+        }
+  ]
+}
