@@ -1,7 +1,7 @@
 README.md
 ====
 
-# Proem
+# Description
 
 This is a simple just for fun project in c/c++.
 
