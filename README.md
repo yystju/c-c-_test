@@ -10,10 +10,10 @@ openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout key.pem -out cert.pem 
 
 
 # Dependencies
-1. boost
-2. openssl
-3. libuv
-4. libco
+1. boost (1.72.0)
+2. openssl (1.1.1d)
+3. libuv ([https://github.com/libuv/libuv.git])
+4. libco ([https://github.com/Tencent/libco.git])
 
 # How to build
 ```shell
