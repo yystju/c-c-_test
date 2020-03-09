@@ -1,13 +1,19 @@
 README.md
 ====
 
-# Generate KEYs
+# Generate keys under cert folder...
 ```shell
 openssl req -x509 -newkey rsa:4096 -sha256 -nodes -keyout key.pem -out cert.pem -days 3650
 ```
 
-[Original Code](https://aticleworld.com/ssl-server-client-using-openssl-in-c/)
+[The original Code of client.js and server.js](https://aticleworld.com/ssl-server-client-using-openssl-in-c/)
 
+
+# Dependencies
+1. boost
+2. openssl
+3. libuv
+4. libco
 
 # How to build
 ```shell
@@ -19,3 +25,6 @@ $ make
 ```
 
 [An example for <Project>Config.cmake file](https://gitlab.kitware.com/cmake/community/-/wikis/doc/tutorials/How-to-create-a-ProjectConfig.cmake-file)
+
+# How to develop the code under theia-cpp
+[An Howto document in simplified Chinese](http://note.youdao.com/noteshare?id=f7ed15927628d72dff4350fa52d6cfe0&sub=2F06DF6168954BC5A475A99408C52CC1)
