@@ -28,6 +28,7 @@ int main() {
         perror("创建文件描述符失败");
         return 0;
     }
+
     event.data.fd=sockfd;
     event.events=EPOLLIN;
     int clRet=epoll_ctl(crRet,EPOLL_CTL_ADD,sockfd,&event);
