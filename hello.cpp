@@ -3,6 +3,8 @@
 #include <fstream>
 #include <memory>
 #include <vector>
+#include <chrono>
+#include <complex>
 
 // #include <stdint.h>
 // #include <string>
@@ -79,15 +81,33 @@ void doSomething() {
 }
 
 int main(int argc, char const *argv[]) {
-    std::string file_name = "./hello.txt";
+    //std::string file_name = "./hello.txt";
 
-    std::ifstream in_file(file_name, std::ifstream::in);
+    //std::ifstream in_file(file_name, std::ifstream::in);
 
-    if(!in_file) {
-        std::cerr << "Failed to open " << file_name << std::endl;
-        return -1;
-    }
+    //if(!in_file) {
+    //    std::cerr << "Failed to open " << file_name << std::endl;
+    //    return -1;
+    //}
 
-    doSomething();
+    auto start = std::chrono::high_resolution_clock::now();
+
+    //doSomething();
+
+    std::complex<double> x(1, 1), y(1,2);
+
+    std::complex<double> z(0, 0);
+
+    z = x * y;
+
+    std::cout << "z : " << z << std::endl;
+
+
+    auto end = std::chrono::high_resolution_clock::now();
+
+    std::chrono::duration<double> interval = (end - start);
+
+    std::cout << "INTERVAL : " << interval.count() << std::endl;
+
     return 0;
 }
